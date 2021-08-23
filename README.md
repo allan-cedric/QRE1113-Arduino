@@ -21,7 +21,7 @@ void loop()
 {
 ...
 lineSensor.read() // Return the analogic value read by sensor
-lineSensor.isRefleting() // Check if a surface is reflecting
+lineSensor.isReflecting() // Check if a surface is reflecting
 ...
 }
 ```
