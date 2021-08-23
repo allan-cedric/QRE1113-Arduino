@@ -11,7 +11,7 @@ class QRE1113
 {
 private:
     uint8_t _pin;               // Pino do sensor
-    uint16_t _levelReflectance; // Nível de refletância
+    uint16_t _ReflectanceLevel; // Nível de refletância
 
 public:
     // Construtor
@@ -20,14 +20,14 @@ public:
     // Retorna o valor analógico lido pelo sensor
     uint16_t read();
 
-    // Verifica se uma superfície está refletindo, se baseia no atributo _levelReflectance
+    // Verifica se uma superfície está refletindo, se baseia no atributo _ReflectanceLevel
     uint8_t isReflecting();
 
     // Retorna o nível de refletância atual
-    uint16_t getLevelReflectance();
+    uint16_t getReflectanceLevel();
 
     // Seta um nível de refletância
-    void setLevelReflectance(uint16_t levelReflectance);
+    void setReflectanceLevel(uint16_t ReflectanceLevel);
 };
 
 #endif

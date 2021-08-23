@@ -4,7 +4,7 @@ QRE1113::QRE1113(uint8_t pin)
 {
     _pin = pin;
     pinMode(_pin, INPUT);
-    QRE1113::setLevelReflectance(STD_REFLECTANCE);
+    QRE1113::setReflectanceLevel(STD_REFLECTANCE);
 }
 
 uint16_t QRE1113::read()
@@ -14,15 +14,15 @@ uint16_t QRE1113::read()
 
 uint8_t QRE1113::isReflecting()
 {
-    return (QRE1113::read() <= QRE1113::getLevelReflectance());
+    return (QRE1113::read() <= QRE1113::getReflectanceLevel());
 }
 
-uint16_t QRE1113::getLevelReflectance()
+uint16_t QRE1113::getReflectanceLevel()
 {
-    return _levelReflectance;
+    return _ReflectanceLevel;
 }
 
-void QRE1113::setLevelReflectance(uint16_t levelReflectance)
+void QRE1113::setReflectanceLevel(uint16_t ReflectanceLevel)
 {
-    _levelReflectance = levelReflectance;
+    _ReflectanceLevel = ReflectanceLevel;
 }

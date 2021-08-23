@@ -1,7 +1,7 @@
 ## QRE1113 Library (C/C++)
 * Library to use the QRE1113 Line Sensor (Analog).
    
-|  ![QRE1113](./QRE1113.jpg)   |
+|   ![QRE1113](./QRE1113.jpg)    |
 | :----------------------------: |
 | *SparkFun QRE1113 Line Sensor* |
    
