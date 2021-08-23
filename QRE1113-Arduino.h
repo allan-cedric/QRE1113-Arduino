@@ -20,7 +20,7 @@ public:
     // Retorna o valor analógico lido pelo sensor
     uint16_t read();
 
-    // Verifica se o sensor está "refletindo", se baseia no atributo _levelReflectance
+    // Verifica se uma superfície está refletindo, se baseia no atributo _levelReflectance
     uint8_t isReflecting();
 
     // Retorna o nível de refletância atual
