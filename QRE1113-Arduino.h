@@ -1,3 +1,7 @@
+// -- Classe que molda o comportamento do sensor QRE1113 --
+// -- Plataforma: Arduino --
+// -- Autor: Allan Cedric --
+
 #ifndef __QRE1113_ARDUINO_H__
 #define __QRE1113_ARDUINO_H__
 
