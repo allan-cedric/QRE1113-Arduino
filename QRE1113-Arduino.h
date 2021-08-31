@@ -8,6 +8,7 @@
 // --- Bibliotecas ---
 #include <Arduino.h>
 
+// --- Macros ---
 #define STD_REFLECTANCE 200
 
 // --- Classe QRE1113 ---
@@ -18,19 +19,39 @@ private:
     uint16_t _ReflectanceLevel; // Nível de refletância
 
 public:
-    // Construtor
+    /*!
+        @brief  Construtor
+
+        @param  pin Pino do sensor
+    */
     QRE1113(uint8_t pin);
 
-    // Retorna o valor analógico lido pelo sensor
+    /*!
+        @brief  Realiza a leitura analógica do sensor
+
+        @return Valor analógico
+    */
     uint16_t read();
 
-    // Verifica se uma superfície está refletindo, se baseia no atributo _ReflectanceLevel
+    /*!
+        @brief  Verifica se o sensor está acusando alguma reflexão
+
+        @return 1 se a superfície está refletindo, senão 0
+    */
     uint8_t isReflecting();
 
-    // Retorna o nível de refletância atual
+    /*!
+        @brief  Retorna o nível de refletância atual
+
+        @return Nível de refletância atual
+    */
     uint16_t getReflectanceLevel();
 
-    // Seta um nível de refletância
+    /*!
+        @brief  Seta um novo nível de refletância
+
+        @param  ReflectanceLevel    Nível de refletância
+    */
     void setReflectanceLevel(uint16_t ReflectanceLevel);
 };
 
