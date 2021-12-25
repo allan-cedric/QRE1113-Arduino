@@ -13,7 +13,7 @@ QRE1113::QRE1113(uint8_t pin)
 
 uint16_t QRE1113::read()
 {
-    return (uint16_t)analogRead(_pin);
+    return analogRead(_pin);
 }
 
 uint8_t QRE1113::isReflecting()
