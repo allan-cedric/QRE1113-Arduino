@@ -1,56 +1,56 @@
-// -- Classe que molda o comportamento do sensor QRE1113 --
-// -- Plataforma: Arduino --
-// -- Autor: Allan Cedric --
+// -- QRE1113 Sensor Class --
+// -- Plataform: Arduino --
+// -- Author: Allan Cedric --
 
 #ifndef __QRE1113_ARDUINO_H__
 #define __QRE1113_ARDUINO_H__
 
-// --- Bibliotecas ---
+// --- Libraries ---
 #include <Arduino.h>
 
 // --- Macros ---
 #define STD_REFLECTANCE 200
 
-// --- Classe QRE1113 ---
+// --- QRE1113 Class ---
 class QRE1113
 {
 private:
-    uint8_t _pin;               // Pino do sensor
-    uint16_t _ReflectanceLevel; // Nível de refletância
+    uint8_t _pin;               // Sensor pin
+    uint16_t _ReflectanceLevel; // Reflectance level
 
 public:
     /*!
-        @brief  Construtor
+        @brief  Constructor
 
-        @param  pin Pino do sensor
+        @param  pin Sensor pin
     */
     QRE1113(uint8_t pin);
 
     /*!
-        @brief  Realiza a leitura analógica do sensor
+        @brief  Read sensor
 
-        @return Valor analógico
+        @return Analogic value
     */
     uint16_t read();
 
     /*!
-        @brief  Verifica se o sensor está acusando alguma reflexão
+        @brief  Check if a surface is reflecting based on a threshhold
 
-        @return 1 se a superfície está refletindo, senão 0
+        @return 1 if the surface is reflecting, otherwise 0
     */
     uint8_t isReflecting();
 
     /*!
-        @brief  Retorna o nível de refletância atual
+        @brief  Current reflectance level
 
-        @return Nível de refletância atual
+        @return Analogic value
     */
     uint16_t getReflectanceLevel();
 
     /*!
-        @brief  Seta um novo nível de refletância
+        @brief  Set a new reflectance level
 
-        @param  ReflectanceLevel    Nível de refletância
+        @param  ReflectanceLevel    Desired reflectance level
     */
     void setReflectanceLevel(uint16_t ReflectanceLevel);
 };

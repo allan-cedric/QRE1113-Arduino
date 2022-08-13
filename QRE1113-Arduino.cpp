@@ -1,14 +1,14 @@
-// -- Implementação da classe QRE1113 --
-// -- Plataforma: Arduino --
-// -- Autor: Allan Cedric --
+// -- Implementation of QRE1113 Class --
+// -- Plataform: Arduino --
+// -- Author: Allan Cedric --
 
 #include "QRE1113-Arduino.h"
 
 QRE1113::QRE1113(uint8_t pin)
 {
     _pin = pin;
-    pinMode(_pin, INPUT);                          // Seta o pino do sensor como INPUT
-    QRE1113::setReflectanceLevel(STD_REFLECTANCE); // Seta um nível de refletância padrão
+    pinMode(_pin, INPUT);
+    QRE1113::setReflectanceLevel(STD_REFLECTANCE);
 }
 
 uint16_t QRE1113::read()
