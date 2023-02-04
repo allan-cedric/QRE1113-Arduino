@@ -1,0 +1,20 @@
+{
+    "name": "QRE1113-Arduino",
+    "version": "1.0.0",
+    "description": "Library to use the QRE1113 Line Sensor (Analog).",
+    "keywords": "qre1113, sensor, analog sensor, arduino",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/allan-cedric/QRE1113-Arduino.git"
+    },
+    "authors":
+    {
+        "name": "Allan Cedric",
+        "email": "allan.py3000@gmail.com"
+    },
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": "atmelavr",
+    "headers": "QRE1113-Arduino.h"
+}

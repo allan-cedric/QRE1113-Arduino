@@ -5,7 +5,6 @@
 #ifndef __QRE1113_ARDUINO_H__
 #define __QRE1113_ARDUINO_H__
 
-// --- Libraries ---
 #include <Arduino.h>
 
 // --- Macros ---
